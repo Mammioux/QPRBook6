@@ -1,0 +1,2 @@
+/Volumes/discao/QPRBook/Classes/FlipsideViewController.m: In function '-[FlipsideViewController flipLanguage:]':
+/Volumes/discao/QPRBook/Classes/FlipsideViewController.m:149: warning: implicit declaration of function 'Debug'
