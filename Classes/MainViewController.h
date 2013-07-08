@@ -8,8 +8,9 @@
 
 #import "FlipsideViewController.h"
 #import "InfoViewController.h"
+#import "ReaderViewController.h"
 
-@interface MainViewController : UIViewController <FlipsideViewControllerDelegate, InfoViewControllerDelegate > {
+@interface MainViewController : UIViewController <FlipsideViewControllerDelegate, InfoViewControllerDelegate,ReaderViewControllerDelegate> {
 }
 
 - (IBAction)showInfo:(id)sender;

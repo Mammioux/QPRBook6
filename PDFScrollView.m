@@ -82,6 +82,21 @@
     return self;
 }
 
+CGContextRef MyPDFContextCreate (const CGRect *inMediaBox,
+                                CFURLRef url)
+{
+    CGContextRef myOutContext = NULL;
+
+    
+    if (url != NULL) {
+        myOutContext = CGPDFContextCreateWithURL (url,// 2
+                                                  inMediaBox,
+                                                  NULL);
+        CFRelease(url);// 3
+    }
+    return myOutContext;// 4
+}
+
 - (void)setPDFPage:(CGPDFPageRef)PDFPage
 
 {
@@ -111,9 +126,9 @@
 		// Get the PDF Page that we will be drawing
         
         // read the current settings
-        //NSInteger pageNumber = [[NSUserDefaults standardUserDefaults] integerForKey:@"currentPage"];
+        NSInteger pageNumber = [[NSUserDefaults standardUserDefaults] integerForKey:@"currentPage"];
 
-		//PDFPage = CGPDFDocumentGetPage(pdf, pageNumber);
+		PDFPage = CGPDFDocumentGetPage(pdf, pageNumber);
         CGPDFPageRetain(PDFPage);
         CGPDFPageRelease(_PDFPage);
         _PDFPage = PDFPage;
@@ -124,11 +139,8 @@
 		pageRect.size = CGSizeMake(pageRect.size.width*_PDFScale, pageRect.size.height*_PDFScale);
 		
 		
-		// Create a low res image representation of the PDF page to display before the TiledPDFView
-		// renders its content.
-		UIGraphicsBeginImageContext(pageRect.size);
 		
-		CGContextRef context = UIGraphicsGetCurrentContext();
+		CGContextRef context = MyPDFContextCreate(&pageRect,(__bridge CFURLRef)pdfURL);
 		
 		// First fill the background with white.
 		CGContextSetRGBFillColor(context, 1.0,1.0,1.0,1.0);

@@ -36,22 +36,35 @@
 - (IBAction)showInfo:(id)sender {
     NSLog(@"Show Info");
     
-    UIButton *b = sender;
     
-    if ([b.titleLabel.text compare:@"Open Book"] == NSOrderedSame) {
-        // set language as English
-        [[NSUserDefaults standardUserDefaults] setValue:@"English" forKey:@"language"];        
-    } else {
-        // set language as Spanish
-        [[NSUserDefaults standardUserDefaults] setValue:@"Spanish" forKey:@"language"];
-
-    }
-	
-	FlipsideViewController *controller = [[FlipsideViewController alloc] initWithNibName:@"FlipsideView" bundle:nil ];
-	controller.delegate = self;
-	
-	controller.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-	[self presentViewController:controller animated:YES completion:nil];
+	NSString *phrase = nil; // Document password (for unlocking most encrypted PDF files)
+    
+    
+	NSArray *pdfs = [[NSBundle mainBundle] pathsForResourcesOfType:@"pdf" inDirectory:nil];
+    
+	NSString *filePath = [pdfs lastObject]; assert(filePath != nil); // Path to last PDF file
+    
+	ReaderDocument *document = [ReaderDocument withDocumentFilePath:filePath password:phrase];
+    
+	if (document != nil) // Must have a valid ReaderDocument object in order to proceed with things
+	{
+		ReaderViewController *readerViewController = [[ReaderViewController alloc] initWithReaderDocument:document];
+        
+		readerViewController.delegate = self; // Set the ReaderViewController delegate to self
+        
+#if (DEMO_VIEW_CONTROLLER_PUSH == TRUE)
+        
+		[self.navigationController pushViewController:readerViewController animated:YES];
+        
+#else // present in a modal view controller
+        
+		readerViewController.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+		readerViewController.modalPresentationStyle = UIModalPresentationFullScreen;
+        
+		[self presentViewController:readerViewController animated:YES completion:NULL];
+        
+#endif // DEMO_VIEW_CONTROLLER_PUSH
+	}
 
 }
 
@@ -86,5 +99,21 @@
     [self presentViewController:vc animated:YES completion:nil];
     
 }
+
+#pragma mark ReaderViewControllerDelegate methods
+
+- (void)dismissReaderViewController:(ReaderViewController *)viewController
+{
+#if (DEMO_VIEW_CONTROLLER_PUSH == TRUE)
+    
+	[self.navigationController popViewControllerAnimated:YES];
+    
+#else // dismiss the modal view controller
+    
+	[self dismissViewControllerAnimated:YES completion:NULL];
+    
+#endif // DEMO_VIEW_CONTROLLER_PUSH
+}
+
 
 @end
