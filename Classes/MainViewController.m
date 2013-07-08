@@ -7,7 +7,6 @@
 //
 
 #import "MainViewController.h"
-#import "InfoViewController.h"
 
 @implementation MainViewController
 
@@ -18,20 +17,6 @@
 	[super viewDidLoad];
 }
 */
-
-
-- (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller {
-    
-	[self dismissViewControllerAnimated:YES completion:nil];
-}
-
-
-
-- (void)infoViewControllerDidFinish:(InfoViewController *)controller {
-    
-	[self dismissViewControllerAnimated:YES completion:nil];
-}
-
 
 - (IBAction)showInfo:(id)sender {
     NSLog(@"Show Info");
@@ -93,11 +78,7 @@
 
 
 - (void) showQPRSite:(id)sender {
-    InfoViewController * vc= sender;
-    vc.delegate = self;
-    vc.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    [self presentViewController:vc animated:YES completion:nil];
-    
+    NSLog(@"Show QPR Site");
 }
 
 #pragma mark ReaderViewControllerDelegate methods

@@ -6,11 +6,10 @@
 //  Copyright 2010 __MyCompanyName__. All rights reserved.
 //
 
-#import "FlipsideViewController.h"
-#import "InfoViewController.h"
+
 #import "ReaderViewController.h"
 
-@interface MainViewController : UIViewController <FlipsideViewControllerDelegate, InfoViewControllerDelegate,ReaderViewControllerDelegate> {
+@interface MainViewController : UIViewController <ReaderViewControllerDelegate> {
 }
 
 - (IBAction)showInfo:(id)sender;

@@ -13,8 +13,6 @@
 		0B2CFF2D137B763800802505 /* 10-medical.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2CFF2C137B763800802505 /* 10-medical.png */; };
 		0B2CFF2F137B785A00802505 /* info_20.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2CFF2E137B785A00802505 /* info_20.png */; };
 		0B2CFF32137B7A1A00802505 /* pagecurlleft.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2CFF31137B7A1A00802505 /* pagecurlleft.png */; };
-		0B42089512F8E965003BB51C /* TiledPDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42089212F8E965003BB51C /* TiledPDFView.m */; };
-		0B42089612F8E965003BB51C /* PDFScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B42089412F8E965003BB51C /* PDFScrollView.m */; };
 		0B4208A912F8ECFD003BB51C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B4208A812F8ECFD003BB51C /* QuartzCore.framework */; };
 		0B42091F12F90969003BB51C /* curlLeft.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B42091D12F90969003BB51C /* curlLeft.png */; };
 		0B42092012F90969003BB51C /* curlRight.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B42091E12F90969003BB51C /* curlRight.png */; };
@@ -22,8 +20,6 @@
 		0B9FBBCF12FB00C100C5FA2F /* Decisión para siempre.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0B9FBBCE12FB00C100C5FA2F /* Decisión para siempre.pdf */; };
 		0BDEA84C12A58920002A9DE6 /* swipe.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEA84B12A5891F002A9DE6 /* swipe.png */; };
 		0BDEA8E912A748C5002A9DE6 /* QPRLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEA8E812A748C5002A9DE6 /* QPRLogo.png */; };
-		0BF8DB0C1406EB4000FB5D3A /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BF8DB0A1406EB4000FB5D3A /* InfoViewController.m */; };
-		0BF8DB0D1406EB4000FB5D3A /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BF8DB0B1406EB4000FB5D3A /* InfoViewController.xib */; };
 		0BF8DB1B1408525D00FB5D3A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BF8DB1A1408525D00FB5D3A /* Default.png */; };
 		0BF8DB1D140864CF00FB5D3A /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BF8DB1C140864CF00FB5D3A /* Entitlements.plist */; };
 		0BF8DB24140B2A5100FB5D3A /* QPRLogo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0BF8DB21140B2A5100FB5D3A /* QPRLogo.gif */; };
@@ -31,11 +27,9 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		280E754D0DD40C5E005A515E /* FlipsideView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754A0DD40C5E005A515E /* FlipsideView.xib */; };
 		280E754E0DD40C5E005A515E /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754B0DD40C5E005A515E /* MainView.xib */; };
 		288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765580DF743DE002DB57D /* CoreGraphics.framework */; };
 		289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */; };
-		289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */; };
 		8662E867174E9EB500FBBC99 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8662E866174E9EB500FBBC99 /* Default-568h@2x.png */; };
 		86BD1022178B6C3400C1AEF4 /* libPDFReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 861337DA178B5F7A004B6339 /* libPDFReader.a */; };
 		86BD1024178B6E1C00C1AEF4 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BD1023178B6E1C00C1AEF4 /* ImageIO.framework */; };
@@ -66,10 +60,6 @@
 		0B2CFF2C137B763800802505 /* 10-medical.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "10-medical.png"; sourceTree = "<group>"; };
 		0B2CFF2E137B785A00802505 /* info_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info_20.png; sourceTree = "<group>"; };
 		0B2CFF31137B7A1A00802505 /* pagecurlleft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pagecurlleft.png; sourceTree = "<group>"; };
-		0B42089112F8E965003BB51C /* TiledPDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TiledPDFView.h; sourceTree = "<group>"; };
-		0B42089212F8E965003BB51C /* TiledPDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TiledPDFView.m; sourceTree = "<group>"; };
-		0B42089312F8E965003BB51C /* PDFScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFScrollView.h; sourceTree = "<group>"; };
-		0B42089412F8E965003BB51C /* PDFScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFScrollView.m; sourceTree = "<group>"; };
 		0B4208A812F8ECFD003BB51C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0B42091D12F90969003BB51C /* curlLeft.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = curlLeft.png; sourceTree = "<group>"; };
 		0B42091E12F90969003BB51C /* curlRight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = curlRight.png; sourceTree = "<group>"; };
@@ -77,9 +67,6 @@
 		0B9FBBCE12FB00C100C5FA2F /* Decisión para siempre.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Decisión para siempre.pdf"; sourceTree = "<group>"; };
 		0BDEA84B12A5891F002A9DE6 /* swipe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = swipe.png; sourceTree = "<group>"; };
 		0BDEA8E812A748C5002A9DE6 /* QPRLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QPRLogo.png; sourceTree = "<group>"; };
-		0BF8DB091406EB4000FB5D3A /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
-		0BF8DB0A1406EB4000FB5D3A /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
-		0BF8DB0B1406EB4000FB5D3A /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
 		0BF8DB1A1408525D00FB5D3A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		0BF8DB1C140864CF00FB5D3A /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		0BF8DB21140B2A5100FB5D3A /* QPRLogo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = QPRLogo.gif; sourceTree = "<group>"; };
@@ -88,13 +75,10 @@
 		1D3623250D0F684500981E51 /* QPRBookAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPRBookAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* QPRBook6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QPRBook6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		280E754A0DD40C5E005A515E /* FlipsideView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlipsideView.xib; sourceTree = "<group>"; };
 		280E754B0DD40C5E005A515E /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		288765580DF743DE002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		289233A80DB2D0DB0083E9F9 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
 		289233A90DB2D0DB0083E9F9 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/MainViewController.m; sourceTree = "<group>"; };
-		289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlipsideViewController.h; path = Classes/FlipsideViewController.h; sourceTree = "<group>"; };
-		289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlipsideViewController.m; path = Classes/FlipsideViewController.m; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* QPRBook6_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPRBook6_Prefix.pch; sourceTree = "<group>"; };
 		861337D5178B5F79004B6339 /* PDFReader.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PDFReader.xcodeproj; path = ../PDFReader/PDFReader.xcodeproj; sourceTree = "<group>"; };
@@ -132,35 +116,12 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		0BF8DB081406EAF700FB5D3A /* InfoView */ = {
-			isa = PBXGroup;
-			children = (
-				0BF8DB091406EB4000FB5D3A /* InfoViewController.h */,
-				0BF8DB0A1406EB4000FB5D3A /* InfoViewController.m */,
-				0BF8DB0B1406EB4000FB5D3A /* InfoViewController.xib */,
-			);
-			name = InfoView;
-			sourceTree = "<group>";
-		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				1D6058910D05DD3D006BFB54 /* QPRBook6.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		281C6CD70DB2D82200F60ACC /* Flipside View */ = {
-			isa = PBXGroup;
-			children = (
-				289233AC0DB2D0DB0083E9F9 /* FlipsideViewController.h */,
-				289233AD0DB2D0DB0083E9F9 /* FlipsideViewController.m */,
-				0B42089112F8E965003BB51C /* TiledPDFView.h */,
-				0B42089212F8E965003BB51C /* TiledPDFView.m */,
-				0B42089312F8E965003BB51C /* PDFScrollView.h */,
-				0B42089412F8E965003BB51C /* PDFScrollView.m */,
-			);
-			name = "Flipside View";
 			sourceTree = "<group>";
 		};
 		289233A00DB2D0730083E9F9 /* Main View */ = {
@@ -176,9 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				861337D5178B5F79004B6339 /* PDFReader.xcodeproj */,
-				0BF8DB081406EAF700FB5D3A /* InfoView */,
 				289233A00DB2D0730083E9F9 /* Main View */,
-				281C6CD70DB2D82200F60ACC /* Flipside View */,
 				080E96DDFE201D6D7F000001 /* Application Delegate */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -216,7 +175,6 @@
 				0BDEA8E812A748C5002A9DE6 /* QPRLogo.png */,
 				0BDEA84B12A5891F002A9DE6 /* swipe.png */,
 				0B80190F12677D8800485E11 /* Forever_Decision.pdf */,
-				280E754A0DD40C5E005A515E /* FlipsideView.xib */,
 				280E754B0DD40C5E005A515E /* MainView.xib */,
 				8D1107310486CEB800E47090 /* QPRBook6-Info.plist */,
 			);
@@ -315,7 +273,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				280E754D0DD40C5E005A515E /* FlipsideView.xib in Resources */,
 				280E754E0DD40C5E005A515E /* MainView.xib in Resources */,
 				0B80191012677D8900485E11 /* Forever_Decision.pdf in Resources */,
 				0BDEA84C12A58920002A9DE6 /* swipe.png in Resources */,
@@ -329,7 +286,6 @@
 				0B2CFF2D137B763800802505 /* 10-medical.png in Resources */,
 				0B2CFF2F137B785A00802505 /* info_20.png in Resources */,
 				0B2CFF32137B7A1A00802505 /* pagecurlleft.png in Resources */,
-				0BF8DB0D1406EB4000FB5D3A /* InfoViewController.xib in Resources */,
 				0BF8DB1B1408525D00FB5D3A /* Default.png in Resources */,
 				0BF8DB1D140864CF00FB5D3A /* Entitlements.plist in Resources */,
 				0BF8DB24140B2A5100FB5D3A /* QPRLogo.gif in Resources */,
@@ -347,10 +303,6 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* QPRBookAppDelegate.m in Sources */,
 				289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */,
-				289233B00DB2D0DB0083E9F9 /* FlipsideViewController.m in Sources */,
-				0B42089512F8E965003BB51C /* TiledPDFView.m in Sources */,
-				0B42089612F8E965003BB51C /* PDFScrollView.m in Sources */,
-				0BF8DB0C1406EB4000FB5D3A /* InfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
