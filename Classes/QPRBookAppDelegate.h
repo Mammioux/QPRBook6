@@ -8,12 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@class MainViewController;
-
 @interface QPRBookAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) MainViewController *mainViewController;
 
 @end
 

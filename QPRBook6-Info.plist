@@ -10,6 +10,19 @@
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
 	<string>QPRLogo.png</string>
+	<key>CFBundleIcons</key>
+	<dict>
+		<key>CFBundlePrimaryIcon</key>
+		<dict>
+			<key>CFBundleIconFiles</key>
+			<array>
+				<string>QPRLogo.png</string>
+				<string>QPRLogo72.png</string>
+				<string>QPRLogo72@2x.png</string>
+				<string>QPRLogo114.png</string>
+			</array>
+		</dict>
+	</dict>
 	<key>CFBundleIdentifier</key>
 	<string>info.mammioux.${PRODUCT_NAME:rfc1034identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
@@ -26,5 +39,9 @@
 	<true/>
 	<key>UIApplicationExitsOnSuspend</key>
 	<true/>
+	<key>UIMainStoryboardFile</key>
+	<string>MainStoryboard_iPhone</string>
+	<key>UIMainStoryboardFile~ipad</key>
+	<string>MainStoryboard_iPad</string>
 </dict>
 </plist>

@@ -26,10 +26,17 @@
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
-		280E754E0DD40C5E005A515E /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754B0DD40C5E005A515E /* MainView.xib */; };
 		288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765580DF743DE002DB57D /* CoreGraphics.framework */; };
 		289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */; };
 		867B3471178C557200CAA125 /* libPDFReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 861337DA178B5F7A004B6339 /* libPDFReader.a */; };
+		867B3472178C69EB00CAA125 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8662E866174E9EB500FBBC99 /* Default-568h@2x.png */; };
+		867B3474178C6B0E00CAA125 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 867B3473178C6B0E00CAA125 /* MainStoryboard_iPhone.storyboard */; };
+		867B3476178C6BE800CAA125 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 867B3475178C6BE800CAA125 /* MainStoryboard_iPad.storyboard */; };
+		867B3479178C70A200CAA125 /* QPRLogo72.png in Resources */ = {isa = PBXBuildFile; fileRef = 867B3477178C70A200CAA125 /* QPRLogo72.png */; };
+		867B347A178C70A200CAA125 /* QPRLogo72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 867B3478178C70A200CAA125 /* QPRLogo72@2x.png */; };
+		867B347C178C717000CAA125 /* QPRLogo114.png in Resources */ = {isa = PBXBuildFile; fileRef = 867B347B178C717000CAA125 /* QPRLogo114.png */; };
+		867B347E178C778100CAA125 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 867B347D178C778100CAA125 /* Default@2x.png */; };
+		867B347F178C780000CAA125 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BF8DB1A1408525D00FB5D3A /* Default.png */; };
 		86BD1024178B6E1C00C1AEF4 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BD1023178B6E1C00C1AEF4 /* ImageIO.framework */; };
 		86BD1026178B6E2B00C1AEF4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BD1025178B6E2B00C1AEF4 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
@@ -73,7 +80,6 @@
 		1D3623250D0F684500981E51 /* QPRBookAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QPRBookAppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* QPRBook6.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QPRBook6.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		280E754B0DD40C5E005A515E /* MainView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainView.xib; sourceTree = "<group>"; };
 		288765580DF743DE002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		289233A80DB2D0DB0083E9F9 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = Classes/MainViewController.h; sourceTree = "<group>"; };
 		289233A90DB2D0DB0083E9F9 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = Classes/MainViewController.m; sourceTree = "<group>"; };
@@ -81,6 +87,12 @@
 		32CA4F630368D1EE00C91783 /* QPRBook6_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPRBook6_Prefix.pch; sourceTree = "<group>"; };
 		861337D5178B5F79004B6339 /* PDFReader.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PDFReader.xcodeproj; path = ../PDFReader/PDFReader.xcodeproj; sourceTree = "<group>"; };
 		8662E866174E9EB500FBBC99 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		867B3473178C6B0E00CAA125 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		867B3475178C6BE800CAA125 /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		867B3477178C70A200CAA125 /* QPRLogo72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QPRLogo72.png; sourceTree = "<group>"; };
+		867B3478178C70A200CAA125 /* QPRLogo72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "QPRLogo72@2x.png"; sourceTree = "<group>"; };
+		867B347B178C717000CAA125 /* QPRLogo114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QPRLogo114.png; sourceTree = "<group>"; };
+		867B347D178C778100CAA125 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		86BD1023178B6E1C00C1AEF4 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		86BD1025178B6E2B00C1AEF4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		8D1107310486CEB800E47090 /* QPRBook6-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "QPRBook6-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
@@ -127,6 +139,8 @@
 			children = (
 				289233A80DB2D0DB0083E9F9 /* MainViewController.h */,
 				289233A90DB2D0DB0083E9F9 /* MainViewController.m */,
+				867B3473178C6B0E00CAA125 /* MainStoryboard_iPhone.storyboard */,
+				867B3475178C6BE800CAA125 /* MainStoryboard_iPad.storyboard */,
 			);
 			name = "Main View";
 			sourceTree = "<group>";
@@ -157,7 +171,11 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				867B347B178C717000CAA125 /* QPRLogo114.png */,
+				867B3478178C70A200CAA125 /* QPRLogo72@2x.png */,
+				867B3477178C70A200CAA125 /* QPRLogo72.png */,
 				8662E866174E9EB500FBBC99 /* Default-568h@2x.png */,
+				867B347D178C778100CAA125 /* Default@2x.png */,
 				0BF8DB1C140864CF00FB5D3A /* Entitlements.plist */,
 				0BF8DB21140B2A5100FB5D3A /* QPRLogo.gif */,
 				0BF8DB1A1408525D00FB5D3A /* Default.png */,
@@ -173,7 +191,6 @@
 				0BDEA8E812A748C5002A9DE6 /* QPRLogo.png */,
 				0BDEA84B12A5891F002A9DE6 /* swipe.png */,
 				0B80190F12677D8800485E11 /* Forever_Decision.pdf */,
-				280E754B0DD40C5E005A515E /* MainView.xib */,
 				8D1107310486CEB800E47090 /* QPRBook6-Info.plist */,
 			);
 			name = Resources;
@@ -271,7 +288,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				280E754E0DD40C5E005A515E /* MainView.xib in Resources */,
 				0B80191012677D8900485E11 /* Forever_Decision.pdf in Resources */,
 				0BDEA84C12A58920002A9DE6 /* swipe.png in Resources */,
 				0BDEA8E912A748C5002A9DE6 /* QPRLogo.png in Resources */,
@@ -286,6 +302,14 @@
 				0B2CFF32137B7A1A00802505 /* pagecurlleft.png in Resources */,
 				0BF8DB1D140864CF00FB5D3A /* Entitlements.plist in Resources */,
 				0BF8DB24140B2A5100FB5D3A /* QPRLogo.gif in Resources */,
+				867B3472178C69EB00CAA125 /* Default-568h@2x.png in Resources */,
+				867B3474178C6B0E00CAA125 /* MainStoryboard_iPhone.storyboard in Resources */,
+				867B3476178C6BE800CAA125 /* MainStoryboard_iPad.storyboard in Resources */,
+				867B3479178C70A200CAA125 /* QPRLogo72.png in Resources */,
+				867B347A178C70A200CAA125 /* QPRLogo72@2x.png in Resources */,
+				867B347C178C717000CAA125 /* QPRLogo114.png in Resources */,
+				867B347E178C778100CAA125 /* Default@2x.png in Resources */,
+				867B347F178C780000CAA125 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

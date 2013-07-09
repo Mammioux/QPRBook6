@@ -7,7 +7,6 @@
 //
 
 #import "QPRBookAppDelegate.h"
-#import "MainViewController.h"
 
 
 @implementation QPRBookAppDelegate
@@ -18,13 +17,6 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
-    // Override point for customization after application launch.
-     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-
-    // Add the main view controller's view to the window and display.
-    self.mainViewController = [[MainViewController alloc] initWithNibName:@"MainView" bundle:nil];
-    //self.window.rootViewController = self.mainViewController;
-    [self.window setRootViewController:self.mainViewController];
     [self.window makeKeyAndVisible];
 
     return YES;
