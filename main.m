@@ -11,7 +11,9 @@
 
 int main(int argc, char *argv[])
 {
+    int retVal = 0;
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([QPRBookAppDelegate class]));
+        retVal = UIApplicationMain(argc, argv, nil, NSStringFromClass([QPRBookAppDelegate class]));
     }
+    return retVal;
 }

@@ -20,7 +20,6 @@
 		0B9FBBCF12FB00C100C5FA2F /* Decisión para siempre.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 0B9FBBCE12FB00C100C5FA2F /* Decisión para siempre.pdf */; };
 		0BDEA84C12A58920002A9DE6 /* swipe.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEA84B12A5891F002A9DE6 /* swipe.png */; };
 		0BDEA8E912A748C5002A9DE6 /* QPRLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BDEA8E812A748C5002A9DE6 /* QPRLogo.png */; };
-		0BF8DB1B1408525D00FB5D3A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 0BF8DB1A1408525D00FB5D3A /* Default.png */; };
 		0BF8DB1D140864CF00FB5D3A /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BF8DB1C140864CF00FB5D3A /* Entitlements.plist */; };
 		0BF8DB24140B2A5100FB5D3A /* QPRLogo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 0BF8DB21140B2A5100FB5D3A /* QPRLogo.gif */; };
 		1D3623260D0F684500981E51 /* QPRBookAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* QPRBookAppDelegate.m */; };
@@ -30,8 +29,7 @@
 		280E754E0DD40C5E005A515E /* MainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 280E754B0DD40C5E005A515E /* MainView.xib */; };
 		288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765580DF743DE002DB57D /* CoreGraphics.framework */; };
 		289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */; };
-		8662E867174E9EB500FBBC99 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8662E866174E9EB500FBBC99 /* Default-568h@2x.png */; };
-		86BD1022178B6C3400C1AEF4 /* libPDFReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 861337DA178B5F7A004B6339 /* libPDFReader.a */; };
+		867B3471178C557200CAA125 /* libPDFReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 861337DA178B5F7A004B6339 /* libPDFReader.a */; };
 		86BD1024178B6E1C00C1AEF4 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BD1023178B6E1C00C1AEF4 /* ImageIO.framework */; };
 		86BD1026178B6E2B00C1AEF4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86BD1025178B6E2B00C1AEF4 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
@@ -93,13 +91,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				867B3471178C557200CAA125 /* libPDFReader.a in Frameworks */,
 				86BD1024178B6E1C00C1AEF4 /* ImageIO.framework in Frameworks */,
 				86BD1026178B6E2B00C1AEF4 /* MessageUI.framework in Frameworks */,
 				0B4208A912F8ECFD003BB51C /* QuartzCore.framework in Frameworks */,
 				288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
-				86BD1022178B6C3400C1AEF4 /* libPDFReader.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,10 +284,8 @@
 				0B2CFF2D137B763800802505 /* 10-medical.png in Resources */,
 				0B2CFF2F137B785A00802505 /* info_20.png in Resources */,
 				0B2CFF32137B7A1A00802505 /* pagecurlleft.png in Resources */,
-				0BF8DB1B1408525D00FB5D3A /* Default.png in Resources */,
 				0BF8DB1D140864CF00FB5D3A /* Entitlements.plist in Resources */,
 				0BF8DB24140B2A5100FB5D3A /* QPRLogo.gif in Resources */,
-				8662E867174E9EB500FBBC99 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +351,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = QPRBook6;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -386,6 +383,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = QPRBook6;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -414,6 +412,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)\"",
 				);
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = QPRBook6;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";

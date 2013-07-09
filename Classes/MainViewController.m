@@ -20,14 +20,22 @@
 
 - (IBAction)showInfo:(id)sender {
     NSLog(@"Show Info");
-    
-    
-	NSString *phrase = nil; // Document password (for unlocking most encrypted PDF files)
-    
-    
+    NSString *phrase = nil; // Document password (for unlocking most encrypted PDF files)
 	NSArray *pdfs = [[NSBundle mainBundle] pathsForResourcesOfType:@"pdf" inDirectory:nil];
-    
-	NSString *filePath = [pdfs lastObject]; assert(filePath != nil); // Path to last PDF file
+    NSString *filePath = [pdfs lastObject]; assert(filePath != nil); // Path to last PDF file
+
+    UIButton *b = sender;
+    if ([b.titleLabel.text compare:@"Open Book"] == NSOrderedSame) {
+        NSLog(@"Open English book");
+        filePath = [pdfs objectAtIndex:1];
+        // set language as English
+        [[NSUserDefaults standardUserDefaults] setValue:@"English" forKey:@"language"];
+    } else {
+        NSLog(@"Open Spanish book");
+        // set language as Spanish
+        [[NSUserDefaults standardUserDefaults] setValue:@"Spanish" forKey:@"language"];
+        filePath = [pdfs objectAtIndex:0];
+    }
     
 	ReaderDocument *document = [ReaderDocument withDocumentFilePath:filePath password:phrase];
     
