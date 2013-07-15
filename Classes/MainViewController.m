@@ -19,7 +19,6 @@
 
 
 - (IBAction)showInfo:(id)sender {
-    NSLog(@"Show Info");
     NSString *phrase = nil; // Document password (for unlocking most encrypted PDF files)
 	NSArray *pdfs = [[NSBundle mainBundle] pathsForResourcesOfType:@"pdf" inDirectory:nil];
     NSString *filePath = [pdfs lastObject]; assert(filePath != nil); // Path to last PDF file

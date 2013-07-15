@@ -7,26 +7,13 @@
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "main.m"
-         timestampString = "395071405.566348"
+         filePath = "../PDFReader/PDFReader/Sources/ReaderViewController.m"
+         timestampString = "395349492.121631"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "16"
-         endingLineNumber = "16"
-         landmarkName = "main()"
-         landmarkType = "7">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "Yes"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "../PDFReader/PDFReader/Sources/ReaderMainToolbar.m"
-         timestampString = "395262793.389769"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "179"
-         endingLineNumber = "179"
-         landmarkName = "-setBookmarkState:"
+         startingLineNumber = "373"
+         endingLineNumber = "373"
+         landmarkName = "-handleSingleTap:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
