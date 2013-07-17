@@ -25,12 +25,12 @@
 
     UIButton *b = sender;
     if ([b.titleLabel.text compare:@"Open Book"] == NSOrderedSame) {
-        NSLog(@"Open English book");
+
         filePath = [pdfs objectAtIndex:1];
         // set language as English
         [[NSUserDefaults standardUserDefaults] setValue:@"English" forKey:@"language"];
     } else {
-        NSLog(@"Open Spanish book");
+
         // set language as Spanish
         [[NSUserDefaults standardUserDefaults] setValue:@"Spanish" forKey:@"language"];
         filePath = [pdfs objectAtIndex:0];
