@@ -34,51 +34,38 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "../PDFReader/PDFReader/Sources/ReaderContentPage.m"
-         timestampString = "395779413.865974"
+         timestampString = "395856309.167278"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "385"
-         endingLineNumber = "385"
+         startingLineNumber = "346"
+         endingLineNumber = "346"
+         landmarkName = "-annotationLinkTarget:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "../PDFReader/PDFReader/Sources/ReaderContentPage.m"
+         timestampString = "395856309.167278"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "376"
+         endingLineNumber = "376"
+         landmarkName = "-annotationLinkTarget:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "Yes"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "../PDFReader/PDFReader/Sources/ReaderContentPage.m"
+         timestampString = "395879053.963062"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "398"
+         endingLineNumber = "398"
          landmarkName = "-processSingleTap:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "../PDFReader/PDFReader/Sources/ReaderContentPage.m"
-         timestampString = "395771781.180658"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "342"
-         endingLineNumber = "342"
-         landmarkName = "-annotationLinkTarget:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "../PDFReader/PDFReader/Sources/ReaderContentPage.m"
-         timestampString = "395771781.180658"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "372"
-         endingLineNumber = "372"
-         landmarkName = "-annotationLinkTarget:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "../PDFReader/PDFReader/Sources/ReaderContentPage.m"
-         timestampString = "395771781.180658"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "258"
-         endingLineNumber = "258"
-         landmarkName = "-annotationLinkTarget:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
