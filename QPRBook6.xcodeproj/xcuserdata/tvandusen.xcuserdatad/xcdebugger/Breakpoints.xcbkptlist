@@ -21,12 +21,38 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "../PDFReader/PDFReader/Sources/ReaderViewController.m"
-         timestampString = "395956619.255595"
+         timestampString = "396306305.520166"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "392"
-         endingLineNumber = "392"
+         startingLineNumber = "394"
+         endingLineNumber = "394"
          landmarkName = "-handleSingleTap:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "../PDFReader/PDFReader/Sources/ReaderMainToolbar.m"
+         timestampString = "396304938.791063"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "219"
+         endingLineNumber = "219"
+         landmarkName = "-updateBookmarkImage"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "../PDFReader/PDFReader/Sources/ReaderMainToolbar.m"
+         timestampString = "396304196.217332"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "199"
+         endingLineNumber = "199"
+         landmarkName = "-setBookmarkState:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

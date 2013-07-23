@@ -10,5 +10,21 @@
             </PersistentString>
          </PersistentStrings>
       </ContextState>
+      <ContextState
+         contextName = "-[ReaderMainToolbar updateBookmarkImage]:ReaderMainToolbar.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "markButton.tag">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ReaderMainToolbar setBookmarkState:]:ReaderMainToolbar.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "markButton.tag">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
    </ContextStates>
 </VariablesViewState>
