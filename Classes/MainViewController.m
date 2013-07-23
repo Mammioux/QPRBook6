@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 
+
 @implementation MainViewController
 
 
@@ -15,6 +16,7 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 	[super viewDidLoad];
+    [self performSelectorOnMainThread:@selector(medbag:) withObject:nil waitUntilDone:NO];
 }
 
 
@@ -38,11 +40,19 @@
     
 	ReaderDocument *document = [ReaderDocument withDocumentFilePath:filePath password:phrase];
     
+    
 	if (document != nil) // Must have a valid ReaderDocument object in order to proceed with things
 	{
-		ReaderViewController *readerViewController = [[ReaderViewController alloc] initWithReaderDocument:document];
+        UIImage *image = [UIImage imageNamed:@"79-medical-bag.png"];
+        UIBarButtonItem *actionButton = [[UIBarButtonItem alloc] initWithImage:image
+                                                           landscapeImagePhone:image
+                                                                         style:UIBarButtonItemStylePlain
+                                                                        target:self action:@selector(medbag:)];
+ 		ReaderViewController *readerViewController = [[ReaderViewController alloc] initWithReaderDocument:document withActionButton:actionButton];
         
 		readerViewController.delegate = self; // Set the ReaderViewController delegate to self
+        
+        
         
 #if (DEMO_VIEW_CONTROLLER_PUSH == TRUE)
         
@@ -60,6 +70,21 @@
 
 }
 
+// action to call for help
+- (IBAction)medbag:(id)sender {
+    NSLog(@"View: %@; Window: %@",[self.view description], [UIApplication sharedApplication].keyWindow.description);
+	UIActionSheet *styleAlert = [[UIActionSheet alloc] initWithTitle:@"For help and more information:"
+                                                            delegate:self cancelButtonTitle:@"Cancel"
+                                              destructiveButtonTitle:nil
+                                                   otherButtonTitles:	@"I need HELP",
+                                 @"About QPR",
+                                 nil];
+	
+	// use the same style as the nav bar
+	styleAlert.actionSheetStyle =  UIActionSheetStyleDefault;
+    
+	[styleAlert showInView:[UIApplication sharedApplication].keyWindow];
+}
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.

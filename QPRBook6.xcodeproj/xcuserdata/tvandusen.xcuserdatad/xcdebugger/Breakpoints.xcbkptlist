@@ -21,11 +21,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "../PDFReader/PDFReader/Sources/ReaderViewController.m"
-         timestampString = "396306305.520166"
+         timestampString = "396312296.967395"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "394"
-         endingLineNumber = "394"
+         startingLineNumber = "420"
+         endingLineNumber = "420"
          landmarkName = "-handleSingleTap:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -34,11 +34,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "../PDFReader/PDFReader/Sources/ReaderMainToolbar.m"
-         timestampString = "396304938.791063"
+         timestampString = "396312296.967395"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "219"
-         endingLineNumber = "219"
+         startingLineNumber = "223"
+         endingLineNumber = "223"
          landmarkName = "-updateBookmarkImage"
          landmarkType = "5">
       </FileBreakpoint>
@@ -47,12 +47,25 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "../PDFReader/PDFReader/Sources/ReaderMainToolbar.m"
-         timestampString = "396304196.217332"
+         timestampString = "396312296.967395"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "199"
-         endingLineNumber = "199"
+         startingLineNumber = "203"
+         endingLineNumber = "203"
          landmarkName = "-setBookmarkState:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Classes/MainViewController.m"
+         timestampString = "396314183.960949"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "84"
+         endingLineNumber = "84"
+         landmarkName = "-medbag:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

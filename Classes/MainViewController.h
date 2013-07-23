@@ -9,7 +9,7 @@
 
 #import "ReaderViewController.h"
 
-@interface MainViewController : UIViewController <ReaderViewControllerDelegate> {
+@interface MainViewController : UIViewController <ReaderViewControllerDelegate, UIActionSheetDelegate> {
 }
 
 - (IBAction)showInfo:(id)sender;
