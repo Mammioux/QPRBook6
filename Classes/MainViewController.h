@@ -14,5 +14,6 @@
 }
 
 - (IBAction)showInfo:(id)sender;
+- (IBAction)medbag:(id)sender;
 
 @end

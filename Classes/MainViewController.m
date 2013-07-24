@@ -56,6 +56,10 @@
                                                                          style:UIBarButtonItemStylePlain
                                                                         target:self action:@selector(medbag:)];
  		ReaderViewController *readerViewController = [[ReaderViewController alloc] initWithReaderDocument:document withActionButton:actionButton];
+        //[actionButton setTarget:readerViewController];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(medbag:)
+                                                     name:@"MEDBAG"
+                                                   object:readerViewController];
         
 		readerViewController.delegate = self; // Set the ReaderViewController delegate to self
         
@@ -79,6 +83,7 @@
 
 // action to call for help
 - (IBAction)medbag:(id)sender {
+    NSLog(@"In medbag: sender is %@ and view is %@",sender, self.view);
 	UIActionSheet *styleAlert = [[UIActionSheet alloc] initWithTitle:@"For help and more information:"
                                                             delegate:self cancelButtonTitle:@"Cancel"
                                               destructiveButtonTitle:nil
@@ -88,8 +93,15 @@
 	
 	// use the same style as the nav bar
 	styleAlert.actionSheetStyle =  UIActionSheetStyleDefault;
-    
-	[styleAlert showInView:[UIApplication sharedApplication].keyWindow];
+    for (UIView *view in self.view.subviews) {
+        NSLog(@"SubView is %@", view);
+    }
+    if (sender){
+        [styleAlert showInView:[(MainViewController *)[(UIBarButtonItem *)sender target] view]];
+    } else {
+        [styleAlert showInView:[UIApplication sharedApplication].delegate.window];
+    }
+	
 }
 
 - (void)didReceiveMemoryWarning {
@@ -153,15 +165,17 @@
 		case 1:
 		{            
             // gain access to the delegate and send a message to switch to a particular view.
-            InfoViewController *controller = [[InfoViewController alloc] initWithNibName:@"InfoViewController" bundle:nil ];
-            controller.delegate = self;
-            controller.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-            controller.modalPresentationStyle = UIModalPresentationFullScreen;
-            UIWindow *rvc = [UIApplication sharedApplication].keyWindow;
-            [rvc addSubview:controller.view];
-            
-            //[rvc.rootViewController presentViewController:controller animated:YES completion:NULL];
-            [self.navigationController presentViewController:controller animated:NO completion:nil];
+//            InfoViewController *controller = [[InfoViewController alloc] initWithNibName:@"InfoViewController" bundle:nil ];
+//            controller.delegate = self;
+//            controller.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+//            controller.modalPresentationStyle = UIModalPresentationFullScreen;
+//            UIWindow *rvc = [UIApplication sharedApplication].keyWindow;
+//            [rvc addSubview:controller.view];
+//            
+//            //[rvc.rootViewController presentViewController:controller animated:YES completion:NULL];
+//            [self.navigationController pushViewController:controller animated:YES];
+            NSLog(@"Going to Perform Segue and superview is:%@",self.view.superview);
+            [self performSegueWithIdentifier:@"ShowQPRSite" sender:self.navigationController];
 			break;
 		}
 	}
@@ -184,5 +198,16 @@
 	[self infoViewControllerDidFinish:(InfoViewController *)self];
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSLog(@"Preparing for Segue: %@",[segue identifier]);
+    if ([[segue identifier] isEqualToString:@"ShowQPRSite"])
+    {
+        InfoViewController *vc = [segue destinationViewController];
+        vc.delegate = self;
+        vc = [vc initWithNibName:@"InfoViewController" bundle:nil ];
+
+    }
+}
 
 @end

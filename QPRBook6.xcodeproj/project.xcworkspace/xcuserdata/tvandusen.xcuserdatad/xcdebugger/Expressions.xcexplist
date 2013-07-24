@@ -14,7 +14,16 @@
          contextName = "-[MainViewController medbag:]:MainViewController.m">
          <PersistentStrings>
             <PersistentString
+               value = "[(UIBarButtonItem *)sender target]">
+            </PersistentString>
+            <PersistentString
+               value = "[(MainViewController *)[(UIBarButtonItem *)sender target] view]">
+            </PersistentString>
+            <PersistentString
                value = "self.view">
+            </PersistentString>
+            <PersistentString
+               value = "[UIApplication sharedApplication].delegate.window">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
