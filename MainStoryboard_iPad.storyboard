@@ -77,7 +77,7 @@
                                 <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="qIB-qU-3zg" firstAttribute="top" secondItem="pDx-lD-fdo" secondAttribute="top" constant="229" id="0pF-l0-0Qb"/>
                             <constraint firstItem="M6O-qv-yeY" firstAttribute="leading" secondItem="pDx-lD-fdo" secondAttribute="leading" constant="237" id="5lL-Lq-frR"/>

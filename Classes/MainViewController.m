@@ -7,9 +7,16 @@
 //
 
 #import "MainViewController.h"
+#import "InfoViewController.h"
 
 
 @implementation MainViewController
+
+
+- (void)infoViewControllerDidFinish:(UIViewController *)controller {
+    
+	[self dismissViewControllerAnimated:YES completion:nil];
+}
 
 
 
@@ -72,7 +79,6 @@
 
 // action to call for help
 - (IBAction)medbag:(id)sender {
-    NSLog(@"View: %@; Window: %@",[self.view description], [UIApplication sharedApplication].keyWindow.description);
 	UIActionSheet *styleAlert = [[UIActionSheet alloc] initWithTitle:@"For help and more information:"
                                                             delegate:self cancelButtonTitle:@"Cancel"
                                               destructiveButtonTitle:nil
@@ -108,10 +114,10 @@
 }
 */
 
-
-- (void) showQPRSite:(id)sender {
-    NSLog(@"Show QPR Site");
-}
+//
+//- (void) showQPRSite:(id)sender {
+//    NSLog(@"Show QPR Site");
+//}
 
 #pragma mark ReaderViewControllerDelegate methods
 
@@ -126,6 +132,56 @@
 	[self dismissViewControllerAnimated:YES completion:NULL];
     
 #endif // DEMO_VIEW_CONTROLLER_PUSH
+}
+
+#pragma mark UIActionSheetDelegate
+
+- (void)actionSheet:(UIActionSheet *)modalView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    // Change the navigation bar style, also make the status bar match with it
+	switch (buttonIndex)
+	{
+		case 0:
+		{
+			// Show page with numbers to call
+
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"In Crisis Now?" message:@"Please call 1-800-273-TALK (1-800-273-8255) or 1-800-SUICIDE (1-800-784-2433) "
+                                                           delegate:self cancelButtonTitle:@"Not Now" otherButtonTitles: @"OK",nil];
+            [alert show];
+			break;
+		}
+		case 1:
+		{            
+            // gain access to the delegate and send a message to switch to a particular view.
+            InfoViewController *controller = [[InfoViewController alloc] initWithNibName:@"InfoViewController" bundle:nil ];
+            controller.delegate = self;
+            controller.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+            controller.modalPresentationStyle = UIModalPresentationFullScreen;
+            UIWindow *rvc = [UIApplication sharedApplication].keyWindow;
+            [rvc addSubview:controller.view];
+            
+            //[rvc.rootViewController presentViewController:controller animated:YES completion:NULL];
+            [self.navigationController presentViewController:controller animated:NO completion:nil];
+			break;
+		}
+	}
+}
+// process button pressed on alert view
+
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    
+    if (buttonIndex == 1) {
+        // Call emergency phone number
+        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel://18002738255"]];
+        
+    }
+}
+
+- (IBAction)done:(id)sender {
+    // save current page
+    NSLog(@"Closing QPR Page inside MainViewController");
+	[self infoViewControllerDidFinish:(InfoViewController *)self];
 }
 
 

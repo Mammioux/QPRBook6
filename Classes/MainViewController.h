@@ -8,11 +8,11 @@
 
 
 #import "ReaderViewController.h"
+#import "InfoViewController.h"
 
-@interface MainViewController : UIViewController <ReaderViewControllerDelegate, UIActionSheetDelegate> {
+@interface MainViewController : UIViewController <ReaderViewControllerDelegate, UIActionSheetDelegate,InfoViewControllerDelegate> {
 }
 
 - (IBAction)showInfo:(id)sender;
-- (void) showQPRSite:(id)sender;
 
 @end

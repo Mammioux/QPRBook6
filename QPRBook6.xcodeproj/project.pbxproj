@@ -21,6 +21,8 @@
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
 		288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765580DF743DE002DB57D /* CoreGraphics.framework */; };
 		289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */; };
+		864342BC17A01E6C0036032C /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 864342BA17A01E6C0036032C /* InfoViewController.m */; };
+		864342BD17A01E6C0036032C /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 864342BB17A01E6C0036032C /* InfoViewController.xib */; };
 		867B3471178C557200CAA125 /* libPDFReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 861337DA178B5F7A004B6339 /* libPDFReader.a */; };
 		867B3472178C69EB00CAA125 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8662E866174E9EB500FBBC99 /* Default-568h@2x.png */; };
 		867B3474178C6B0E00CAA125 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 867B3473178C6B0E00CAA125 /* MainStoryboard_iPhone.storyboard */; };
@@ -86,6 +88,9 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		32CA4F630368D1EE00C91783 /* QPRBook6_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QPRBook6_Prefix.pch; sourceTree = "<group>"; };
 		861337D5178B5F79004B6339 /* PDFReader.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PDFReader.xcodeproj; path = ../PDFReader/PDFReader.xcodeproj; sourceTree = "<group>"; };
+		864342B917A01E6C0036032C /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		864342BA17A01E6C0036032C /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		864342BB17A01E6C0036032C /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
 		8662E866174E9EB500FBBC99 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		867B3473178C6B0E00CAA125 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		867B3475178C6BE800CAA125 /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
@@ -163,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				861337D5178B5F79004B6339 /* PDFReader.xcodeproj */,
+				864342B817A01DD10036032C /* InfoView */,
 				289233A00DB2D0730083E9F9 /* Main View */,
 				080E96DDFE201D6D7F000001 /* Application Delegate */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
@@ -223,6 +229,16 @@
 				861337DA178B5F7A004B6339 /* libPDFReader.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		864342B817A01DD10036032C /* InfoView */ = {
+			isa = PBXGroup;
+			children = (
+				864342B917A01E6C0036032C /* InfoViewController.h */,
+				864342BA17A01E6C0036032C /* InfoViewController.m */,
+				864342BB17A01E6C0036032C /* InfoViewController.xib */,
+			);
+			path = InfoView;
 			sourceTree = "<group>";
 		};
 		86E411E6178F392700BF81B2 /* Graphics */ = {
@@ -346,6 +362,7 @@
 				867B347C178C717000CAA125 /* QPRLogo114.png in Resources */,
 				867B347E178C778100CAA125 /* Default@2x.png in Resources */,
 				867B347F178C780000CAA125 /* Default.png in Resources */,
+				864342BD17A01E6C0036032C /* InfoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +376,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* QPRBookAppDelegate.m in Sources */,
 				289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */,
+				864342BC17A01E6C0036032C /* InfoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
