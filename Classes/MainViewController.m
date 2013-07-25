@@ -23,7 +23,6 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
 	[super viewDidLoad];
-    [self performSelectorOnMainThread:@selector(medbag:) withObject:nil waitUntilDone:NO];
 }
 
 
@@ -57,9 +56,6 @@
                                                                         target:self action:@selector(medbag:)];
  		ReaderViewController *readerViewController = [[ReaderViewController alloc] initWithReaderDocument:document withActionButton:actionButton];
         //[actionButton setTarget:readerViewController];
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(medbag:)
-                                                     name:@"MEDBAG"
-                                                   object:readerViewController];
         
 		readerViewController.delegate = self; // Set the ReaderViewController delegate to self
         
@@ -83,7 +79,6 @@
 
 // action to call for help
 - (IBAction)medbag:(id)sender {
-    NSLog(@"In medbag: sender is %@ and view is %@",sender, self.view);
 	UIActionSheet *styleAlert = [[UIActionSheet alloc] initWithTitle:@"For help and more information:"
                                                             delegate:self cancelButtonTitle:@"Cancel"
                                               destructiveButtonTitle:nil
@@ -93,11 +88,11 @@
 	
 	// use the same style as the nav bar
 	styleAlert.actionSheetStyle =  UIActionSheetStyleDefault;
-    for (UIView *view in self.view.subviews) {
-        NSLog(@"SubView is %@", view);
-    }
+
     if (sender){
-        [styleAlert showInView:[(MainViewController *)[(UIBarButtonItem *)sender target] view]];
+        //UIView *myView = [(MainViewController *)[(UIBarButtonItem *)sender target] view];
+        UIView *myView = [UIApplication sharedApplication].delegate.window;
+        [styleAlert showInView:myView];
     } else {
         [styleAlert showInView:[UIApplication sharedApplication].delegate.window];
     }
@@ -157,25 +152,24 @@
 		{
 			// Show page with numbers to call
 
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"In Crisis Now?" message:@"Please call 1-800-273-TALK (1-800-273-8255) or 1-800-SUICIDE (1-800-784-2433) "
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"In Crisis Now?" message:@"I can call 1-800-273-TALK (1-800-273-8255) or 1-800-SUICIDE (1-800-784-2433) for you"
                                                            delegate:self cancelButtonTitle:@"Not Now" otherButtonTitles: @"OK",nil];
             [alert show];
 			break;
 		}
 		case 1:
-		{            
-            // gain access to the delegate and send a message to switch to a particular view.
-//            InfoViewController *controller = [[InfoViewController alloc] initWithNibName:@"InfoViewController" bundle:nil ];
-//            controller.delegate = self;
-//            controller.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-//            controller.modalPresentationStyle = UIModalPresentationFullScreen;
-//            UIWindow *rvc = [UIApplication sharedApplication].keyWindow;
-//            [rvc addSubview:controller.view];
-//            
-//            //[rvc.rootViewController presentViewController:controller animated:YES completion:NULL];
-//            [self.navigationController pushViewController:controller animated:YES];
-            NSLog(@"Going to Perform Segue and superview is:%@",self.view.superview);
-            [self performSegueWithIdentifier:@"ShowQPRSite" sender:self.navigationController];
+		{
+            if (self.presentedViewController) {
+                // gain access to the presented view controller and send a message show this alert on top.
+                InfoViewController *controller = [[InfoViewController alloc] initWithNibName:@"InfoViewController" bundle:nil ];
+                controller.delegate = self;
+                controller.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+                controller.modalPresentationStyle = UIModalPresentationCurrentContext;
+                [self.presentedViewController presentViewController:controller animated:YES completion:NULL];
+
+            } else {
+                [self performSegueWithIdentifier:@"ShowQPRSite" sender:self.navigationController];
+            }
 			break;
 		}
 	}
@@ -191,16 +185,15 @@
         
     }
 }
-
-- (IBAction)done:(id)sender {
-    // save current page
-    NSLog(@"Closing QPR Page inside MainViewController");
-	[self infoViewControllerDidFinish:(InfoViewController *)self];
-}
+//
+//- (IBAction)done:(id)sender {
+//    // save current page
+//    NSLog(@"Closing QPR Page inside MainViewController");
+//	[self infoViewControllerDidFinish:(InfoViewController *)self];
+//}
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    NSLog(@"Preparing for Segue: %@",[segue identifier]);
     if ([[segue identifier] isEqualToString:@"ShowQPRSite"])
     {
         InfoViewController *vc = [segue destinationViewController];
