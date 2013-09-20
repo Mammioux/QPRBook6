@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01B9166417ECE18E008BFCF0 /* QPRLogo120.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B9166317ECE18E008BFCF0 /* QPRLogo120.png */; };
+		01B9166D17ECE388008BFCF0 /* QPRLogo40.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B9166817ECE388008BFCF0 /* QPRLogo40.png */; };
+		01B9166E17ECE388008BFCF0 /* QPRLogo100.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B9166917ECE388008BFCF0 /* QPRLogo100.png */; };
+		01B9166F17ECE388008BFCF0 /* QPRLogo50.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B9166A17ECE388008BFCF0 /* QPRLogo50.png */; };
+		01B9167017ECE388008BFCF0 /* QPRLogo80.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B9166B17ECE388008BFCF0 /* QPRLogo80.png */; };
+		01B9167117ECE388008BFCF0 /* QPRLogo58.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B9166C17ECE388008BFCF0 /* QPRLogo58.png */; };
+		01B9167317ECE456008BFCF0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01B9167217ECE456008BFCF0 /* Images.xcassets */; };
 		0B2CFF29137B75D500802505 /* 79-medical-bag.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2CFF28137B75D500802505 /* 79-medical-bag.png */; };
 		0B2CFF2F137B785A00802505 /* info_20.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2CFF2E137B785A00802505 /* info_20.png */; };
 		0B4208A912F8ECFD003BB51C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B4208A812F8ECFD003BB51C /* QuartzCore.framework */; };
@@ -22,7 +29,6 @@
 		288765590DF743DE002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765580DF743DE002DB57D /* CoreGraphics.framework */; };
 		289233AE0DB2D0DB0083E9F9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 289233A90DB2D0DB0083E9F9 /* MainViewController.m */; };
 		864342BC17A01E6C0036032C /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 864342BA17A01E6C0036032C /* InfoViewController.m */; };
-		864342BD17A01E6C0036032C /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 864342BB17A01E6C0036032C /* InfoViewController.xib */; };
 		867B3471178C557200CAA125 /* libPDFReader.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 861337DA178B5F7A004B6339 /* libPDFReader.a */; };
 		867B3472178C69EB00CAA125 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8662E866174E9EB500FBBC99 /* Default-568h@2x.png */; };
 		867B3474178C6B0E00CAA125 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 867B3473178C6B0E00CAA125 /* MainStoryboard_iPhone.storyboard */; };
@@ -68,6 +74,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		01B9166317ECE18E008BFCF0 /* QPRLogo120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QPRLogo120.png; sourceTree = "<group>"; };
+		01B9166517ECE32D008BFCF0 /* QPRLogo76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QPRLogo76.png; sourceTree = "<group>"; };
+		01B9166617ECE352008BFCF0 /* QPRLogo152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QPRLogo152.png; sourceTree = "<group>"; };
+		01B9166717ECE369008BFCF0 /* QPRLogo29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QPRLogo29.png; sourceTree = "<group>"; };
+		01B9166817ECE388008BFCF0 /* QPRLogo40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QPRLogo40.png; sourceTree = "<group>"; };
+		01B9166917ECE388008BFCF0 /* QPRLogo100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QPRLogo100.png; sourceTree = "<group>"; };
+		01B9166A17ECE388008BFCF0 /* QPRLogo50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QPRLogo50.png; sourceTree = "<group>"; };
+		01B9166B17ECE388008BFCF0 /* QPRLogo80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QPRLogo80.png; sourceTree = "<group>"; };
+		01B9166C17ECE388008BFCF0 /* QPRLogo58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QPRLogo58.png; sourceTree = "<group>"; };
+		01B9167217ECE456008BFCF0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = QPRBook6/Images.xcassets; sourceTree = "<group>"; };
 		0B2CFF28137B75D500802505 /* 79-medical-bag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "79-medical-bag.png"; sourceTree = "<group>"; };
 		0B2CFF2E137B785A00802505 /* info_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info_20.png; sourceTree = "<group>"; };
 		0B4208A812F8ECFD003BB51C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -90,7 +106,6 @@
 		861337D5178B5F79004B6339 /* PDFReader.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PDFReader.xcodeproj; path = ../PDFReader/PDFReader.xcodeproj; sourceTree = "<group>"; };
 		864342B917A01E6C0036032C /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
 		864342BA17A01E6C0036032C /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
-		864342BB17A01E6C0036032C /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
 		8662E866174E9EB500FBBC99 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		867B3473178C6B0E00CAA125 /* MainStoryboard_iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		867B3475178C6BE800CAA125 /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
@@ -135,6 +150,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01B9167417ECE4E1008BFCF0 /* Logo */ = {
+			isa = PBXGroup;
+			children = (
+				867B347B178C717000CAA125 /* QPRLogo114.png */,
+				01B9166817ECE388008BFCF0 /* QPRLogo40.png */,
+				01B9166917ECE388008BFCF0 /* QPRLogo100.png */,
+				01B9166A17ECE388008BFCF0 /* QPRLogo50.png */,
+				01B9166B17ECE388008BFCF0 /* QPRLogo80.png */,
+				01B9166C17ECE388008BFCF0 /* QPRLogo58.png */,
+				01B9166717ECE369008BFCF0 /* QPRLogo29.png */,
+				01B9166617ECE352008BFCF0 /* QPRLogo152.png */,
+				01B9166517ECE32D008BFCF0 /* QPRLogo76.png */,
+				01B9166317ECE18E008BFCF0 /* QPRLogo120.png */,
+				867B3478178C70A200CAA125 /* QPRLogo72@2x.png */,
+				867B3477178C70A200CAA125 /* QPRLogo72.png */,
+			);
+			name = Logo;
+			sourceTree = "<group>";
+		};
 		080E96DDFE201D6D7F000001 /* Application Delegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,10 +225,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				01B9167217ECE456008BFCF0 /* Images.xcassets */,
 				86E411E6178F392700BF81B2 /* Graphics */,
-				867B347B178C717000CAA125 /* QPRLogo114.png */,
-				867B3478178C70A200CAA125 /* QPRLogo72@2x.png */,
-				867B3477178C70A200CAA125 /* QPRLogo72.png */,
+				01B9167417ECE4E1008BFCF0 /* Logo */,
 				8662E866174E9EB500FBBC99 /* Default-568h@2x.png */,
 				867B347D178C778100CAA125 /* Default@2x.png */,
 				0BF8DB1C140864CF00FB5D3A /* Entitlements.plist */,
@@ -236,7 +269,6 @@
 			children = (
 				864342B917A01E6C0036032C /* InfoViewController.h */,
 				864342BA17A01E6C0036032C /* InfoViewController.m */,
-				864342BB17A01E6C0036032C /* InfoViewController.xib */,
 			);
 			path = InfoView;
 			sourceTree = "<group>";
@@ -334,13 +366,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				86E411F5178F396D00BF81B2 /* Reader-Button-H.png in Resources */,
+				01B9166F17ECE388008BFCF0 /* QPRLogo50.png in Resources */,
+				01B9166E17ECE388008BFCF0 /* QPRLogo100.png in Resources */,
 				86E411F6178F396D00BF81B2 /* Reader-Button-H@2x.png in Resources */,
 				86E411F7178F396D00BF81B2 /* Reader-Button-N.png in Resources */,
+				01B9167117ECE388008BFCF0 /* QPRLogo58.png in Resources */,
 				86E411F8178F396D00BF81B2 /* Reader-Button-N@2x.png in Resources */,
+				01B9167317ECE456008BFCF0 /* Images.xcassets in Resources */,
 				86E411F9178F396D00BF81B2 /* Reader-Email.png in Resources */,
 				86E411FA178F396D00BF81B2 /* Reader-Email@2x.png in Resources */,
 				86E411FB178F396D00BF81B2 /* Reader-Mark-N.png in Resources */,
 				86E411FC178F396D00BF81B2 /* Reader-Mark-N@2x.png in Resources */,
+				01B9166D17ECE388008BFCF0 /* QPRLogo40.png in Resources */,
 				86E411FD178F396D00BF81B2 /* Reader-Mark-Y.png in Resources */,
 				86E411FE178F396D00BF81B2 /* Reader-Mark-Y@2x.png in Resources */,
 				86E411FF178F396D00BF81B2 /* Reader-Print.png in Resources */,
@@ -355,14 +392,15 @@
 				0BF8DB1D140864CF00FB5D3A /* Entitlements.plist in Resources */,
 				0BF8DB24140B2A5100FB5D3A /* QPRLogo.gif in Resources */,
 				867B3472178C69EB00CAA125 /* Default-568h@2x.png in Resources */,
+				01B9166417ECE18E008BFCF0 /* QPRLogo120.png in Resources */,
 				867B3474178C6B0E00CAA125 /* MainStoryboard_iPhone.storyboard in Resources */,
+				01B9167017ECE388008BFCF0 /* QPRLogo80.png in Resources */,
 				867B3476178C6BE800CAA125 /* MainStoryboard_iPad.storyboard in Resources */,
 				867B3479178C70A200CAA125 /* QPRLogo72.png in Resources */,
 				867B347A178C70A200CAA125 /* QPRLogo72@2x.png in Resources */,
 				867B347C178C717000CAA125 /* QPRLogo114.png in Resources */,
 				867B347E178C778100CAA125 /* Default@2x.png in Resources */,
 				867B347F178C780000CAA125 /* Default.png in Resources */,
-				864342BD17A01E6C0036032C /* InfoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +450,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
 				COPY_PHASE_STRIP = YES;
@@ -442,6 +482,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
 				COPY_PHASE_STRIP = NO;
@@ -473,6 +515,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_ENTITLEMENTS = "";
 				COPY_PHASE_STRIP = YES;
