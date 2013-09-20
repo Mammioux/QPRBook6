@@ -14,6 +14,7 @@
 		01B9167017ECE388008BFCF0 /* QPRLogo80.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B9166B17ECE388008BFCF0 /* QPRLogo80.png */; };
 		01B9167117ECE388008BFCF0 /* QPRLogo58.png in Resources */ = {isa = PBXBuildFile; fileRef = 01B9166C17ECE388008BFCF0 /* QPRLogo58.png */; };
 		01B9167317ECE456008BFCF0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01B9167217ECE456008BFCF0 /* Images.xcassets */; };
+		01B9167617ECE7C4008BFCF0 /* InfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 01B9167517ECE7C4008BFCF0 /* InfoViewController.xib */; };
 		0B2CFF29137B75D500802505 /* 79-medical-bag.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2CFF28137B75D500802505 /* 79-medical-bag.png */; };
 		0B2CFF2F137B785A00802505 /* info_20.png in Resources */ = {isa = PBXBuildFile; fileRef = 0B2CFF2E137B785A00802505 /* info_20.png */; };
 		0B4208A912F8ECFD003BB51C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B4208A812F8ECFD003BB51C /* QuartzCore.framework */; };
@@ -84,6 +85,7 @@
 		01B9166B17ECE388008BFCF0 /* QPRLogo80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QPRLogo80.png; sourceTree = "<group>"; };
 		01B9166C17ECE388008BFCF0 /* QPRLogo58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QPRLogo58.png; sourceTree = "<group>"; };
 		01B9167217ECE456008BFCF0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = QPRBook6/Images.xcassets; sourceTree = "<group>"; };
+		01B9167517ECE7C4008BFCF0 /* InfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoViewController.xib; sourceTree = "<group>"; };
 		0B2CFF28137B75D500802505 /* 79-medical-bag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "79-medical-bag.png"; sourceTree = "<group>"; };
 		0B2CFF2E137B785A00802505 /* info_20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = info_20.png; sourceTree = "<group>"; };
 		0B4208A812F8ECFD003BB51C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -267,6 +269,7 @@
 		864342B817A01DD10036032C /* InfoView */ = {
 			isa = PBXGroup;
 			children = (
+				01B9167517ECE7C4008BFCF0 /* InfoViewController.xib */,
 				864342B917A01E6C0036032C /* InfoViewController.h */,
 				864342BA17A01E6C0036032C /* InfoViewController.m */,
 			);
@@ -369,6 +372,7 @@
 				01B9166F17ECE388008BFCF0 /* QPRLogo50.png in Resources */,
 				01B9166E17ECE388008BFCF0 /* QPRLogo100.png in Resources */,
 				86E411F6178F396D00BF81B2 /* Reader-Button-H@2x.png in Resources */,
+				01B9167617ECE7C4008BFCF0 /* InfoViewController.xib in Resources */,
 				86E411F7178F396D00BF81B2 /* Reader-Button-N.png in Resources */,
 				01B9167117ECE388008BFCF0 /* QPRLogo58.png in Resources */,
 				86E411F8178F396D00BF81B2 /* Reader-Button-N@2x.png in Resources */,
