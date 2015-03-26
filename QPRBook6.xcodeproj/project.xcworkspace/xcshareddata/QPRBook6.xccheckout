@@ -2,39 +2,41 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>76B4FEDB-4F64-4875-B1AA-2D52E05DE53B</string>
 	<key>IDESourceControlProjectName</key>
 	<string>QPRBook6</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>416C0210-EA67-457E-B9B0-7CF8B709E577</key>
-		<string>https://github.com/trvd1707/PDFReader.git</string>
-		<key>A97EA746-A5E4-463E-B97E-0DCF8E5E4936</key>
+		<key>2C2CAED699319707B5C19354522F21D7D672A989</key>
 		<string>https://github.com/trvd1707/QPRBook6.git</string>
+		<key>62AFA13A4616708C40BB0EEAC3F29D85ECCDF52A</key>
+		<string>https://github.com/trvd1707/PDFReader.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>QPRBook6.xcodeproj/project.xcworkspace</string>
+	<string>QPRBook6.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>416C0210-EA67-457E-B9B0-7CF8B709E577</key>
-		<string>../../../PDFReader</string>
-		<key>A97EA746-A5E4-463E-B97E-0DCF8E5E4936</key>
+		<key>2C2CAED699319707B5C19354522F21D7D672A989</key>
 		<string>../..</string>
+		<key>62AFA13A4616708C40BB0EEAC3F29D85ECCDF52A</key>
+		<string>../../../PDFReader</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/trvd1707/QPRBook6.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>A97EA746-A5E4-463E-B97E-0DCF8E5E4936</string>
+	<string>2C2CAED699319707B5C19354522F21D7D672A989</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>416C0210-EA67-457E-B9B0-7CF8B709E577</string>
+			<string>62AFA13A4616708C40BB0EEAC3F29D85ECCDF52A</string>
 			<key>IDESourceControlWCCName</key>
 			<string>PDFReader</string>
 		</dict>
@@ -42,7 +44,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>A97EA746-A5E4-463E-B97E-0DCF8E5E4936</string>
+			<string>2C2CAED699319707B5C19354522F21D7D672A989</string>
 			<key>IDESourceControlWCCName</key>
 			<string>QPRBook6</string>
 		</dict>
